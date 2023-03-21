@@ -3,10 +3,10 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-	mode: 'production',
-	output: {
-		path: path.join(__dirname, '../dist'),
-		filename: 'js/[name].bundle-[chunkhash].js',
-		clean: true,
-	},
+  mode: 'production',
+  output: {
+    path: path.join(__dirname, '../dist'),
+    filename: 'js/[name].bundle-[chunkhash].js',
+    clean: true
+  }
 });

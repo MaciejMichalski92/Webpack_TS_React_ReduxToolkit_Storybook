@@ -1,12 +1,12 @@
 {
-	"$schema": "https://json.schemastore.org/swcrc",
-	"jsc": {
-		"parser": {
-			"syntax": "ecmascript",
-			"jsx": true,
-			"dynamicImport": true
-		},
-		"target": "es5",
-		"transform": { "react": { "runtime": "automatic" } }
-	}
+  "$schema": "https://json.schemastore.org/swcrc",
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true,
+      "dynamicImport": true
+    },
+    "target": "es5",
+    "transform": { "react": { "runtime": "automatic" } }
+  }
 }

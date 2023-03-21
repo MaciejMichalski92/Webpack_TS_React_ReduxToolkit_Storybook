@@ -4,14 +4,14 @@ const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-	mode: 'development',
-	devServer: {
-		static: path.join(__dirname, 'dist'),
-	},
-	devtool: 'inline-source-map',
-	plugins: [
-		new BundleAnalyzerPlugin({
-			openAnalyzer: false,
-		}),
-	],
+  mode: 'development',
+  devServer: {
+    static: path.join(__dirname, 'dist')
+  },
+  devtool: 'inline-source-map',
+  plugins: [
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    })
+  ]
 });
