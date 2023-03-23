@@ -10,7 +10,7 @@ module.exports = {
   entry: path.join(__dirname, '../src', 'main.jsx'),
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: 'js/[name].bundle.js',
+    filename: 'src/js/[name].bundle.js',
     clean: true
   },
   module: {
@@ -86,6 +86,13 @@ module.exports = {
               }
             }
           }
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
         }
       }
     ]
