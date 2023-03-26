@@ -3,6 +3,7 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 dist/
+storybook-static/
 .env
 .env.local
 # User-specific files

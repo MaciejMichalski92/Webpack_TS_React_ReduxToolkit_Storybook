@@ -1,14 +1,29 @@
-.exampleStyle {
+@mixin setRadius($value) {
+  border-radius: $value;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.subtitle {
   margin: 10px 20px;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  @include setRadius(10px);
   color: green;
+  background-color: lightgrey;
+}
+
+.interface {
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  @include setRadius(15px);
   background-color: lightgrey;
 }
 
 .button {
   padding: 5px 15px;
-  border-radius: 10px;
+  @include setRadius(10px);
   background-color: #222;
   color: #eee;
   margin: 5px 10px;

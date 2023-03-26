@@ -25,3 +25,5 @@ open source project, by Maciej Michalski
 ## Caveats
 
 - remember to use only explicit imports for importing modules/components, to awoid problems with automatic tree-shaking **_(due to split chunks, when you import implicit from one place (import \* from 'src/components') webpack can import everything, preventing lazy module import because code will be in a bundle already)_**
+
+- Storybook has to be ver 7: [See thread here](https://github.com/storybookjs/storybook/issues/21642)

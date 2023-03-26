@@ -30,27 +30,36 @@ const ExampleComponent = () => {
 
   return (
     <>
-      <h2 className={styles.exampleStyle}>
-        Example Counter: {counterValue}
+      <h2 data-testid="example-component" className={styles.title}>
+        Example Component
       </h2>
-      <button
-        className={styles.button}
-        onClick={() => handleClick('addOne')}
+      <h3
+        data-testid="example-component-counter-text"
+        className={styles.subtitle}
       >
-        +1
-      </button>
-      <button
-        className={styles.button}
-        onClick={() => handleClick('subtractOne')}
-      >
-        -1
-      </button>
-      <button
-        className={styles.button}
-        onClick={() => handleClick('addValue', 5)}
-      >
-        +5
-      </button>
+        Counter: {counterValue}
+      </h3>
+      <div className={styles.interface}>
+        <button
+          data-testid="example-button-addOne"
+          className={styles.button}
+          onClick={() => handleClick('addOne')}
+        >
+          +1
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => handleClick('subtractOne')}
+        >
+          -1
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => handleClick('addValue', 5)}
+        >
+          +5
+        </button>
+      </div>
     </>
   );
 };
